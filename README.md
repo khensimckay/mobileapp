@@ -1,6 +1,6 @@
 # Chef's Menu Manager
 
-A simple React Native mobile app that helps a chef create and view menu items.
+A simple React Native mobile app with browser support that helps a chef create and view menu items.
 
 ## Features
 
@@ -10,39 +10,45 @@ A simple React Native mobile app that helps a chef create and view menu items.
 - Get confirmation after adding a dish.
 - View all added menu items in a live-updating list.
 - Display prices in South African rand (R).
+- Run the app on Android with Expo Go or in a desktop browser.
 
 Menu items are stored in memory for this first version. They are cleared when the app is restarted; persistent storage is planned for a later version.
 
 ## Requirements
 
 - Node.js LTS
-- Expo Go on an Android phone
-- A computer and phone connected to the same Wi-Fi network
+- For Android: Expo Go on an Android phone
+- For Android device testing: computer and phone connected to the same Wi-Fi network
 
-## Run the app
+## Install dependencies
 
-1. Open this project folder in Visual Studio Code.
-2. In the VS Code terminal, install the dependencies:
+Open this project folder in Visual Studio Code and run:
 
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 
-3. Start Expo:
+## Run in a desktop browser
 
-   ```bash
-   npm start
-   ```
+```bash
+npm run web
+```
 
-4. Scan the QR code shown in the terminal using Expo Go.
+Expo starts the web version and opens it in your browser. If it does not open automatically, use the local address printed in the terminal.
 
-If port 8081 is already in use, Expo can use another available port. Use the QR code and connection address printed by the active Expo terminal.
+## Run on Android
+
+```bash
+npm start
+```
+
+Scan the QR code shown in the terminal using Expo Go. If port 8081 is already in use, use the QR code and address printed by the active Expo terminal.
 
 ## Project structure
 
 - `App.js` — app screens, menu form, validation, and menu list.
-- `app.json` — Expo app name and Android package settings.
-- `package.json` — project scripts and dependencies.
+- `app.json` — Expo app name, Android package, and Metro web bundler settings.
+- `package.json` — project scripts and dependencies, including the `web` script.
 
 ## Current scope
 

@@ -9,6 +9,12 @@ A simple React Native mobile app with browser support that helps a chef create a
 - See required-field and price validation messages.
 - Get confirmation after adding a dish.
 - View all added menu items in a live-updating list.
+- Edit a dish and save its updated details.
+- Delete a dish after confirming the action.
+- Search by dish name, description, or course.
+- Filter the list by Starter, Main Course, or Dessert.
+- View menu totals, average price, and counts for each course.
+- See clear validation, success, empty-menu, and no-search-results messages.
 - Display prices in South African rand (R).
 - Run the app on Android with Expo Go or in a desktop browser.
 
@@ -50,7 +56,7 @@ Scan the QR code shown in the terminal using Expo Go. If port 8081 is already in
 - `app.json` — Expo app name, Android package, and Metro web bundler settings.
 - `package.json` — project scripts and dependencies, including the `web` script.
 
-## Current scope
+## Part 3 features
 
-This version supports adding and viewing menu items. Editing, deleting, searching, filtering, statistics, and persistent storage are not included yet.
+Menu changes update the list and statistics immediately. Search and course filters can be combined, and the empty results message offers a one-tap way to reset them. Menu items remain in memory and are cleared when the app is restarted; persistent storage is not included.
 

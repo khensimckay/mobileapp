@@ -6,4 +6,5 @@ ios/
 .DS_Store
 *.log
 .npm-cache/
+dist/
 
